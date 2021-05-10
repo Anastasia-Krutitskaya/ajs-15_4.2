@@ -8,5 +8,10 @@ const charactersSorted = [
 
 test('sortByHealth', () => {
   sortByHealth(characters);
-  expect(characters).toBe(charactersSorted);
+  expect(characters).toEqual(charactersSorted);
+});
+
+test('sortByHealth', () => {
+  sortByHealth(characters);
+  expect(characters).not.toBe(charactersSorted);
 });
